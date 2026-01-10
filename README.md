@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LOLA - AI Companion Device
 
-## Getting Started
+![LOLA Front View](public/assets/lola-front.png)
 
-First, run the development server:
+**LOLA (Learning-Oriented Life Assistant)** is a friendly, always-on AI companion designed to be a presence in your daily life. Unlike traditional assistants that wait for commands, LOLA is designed to be a conversational partner, a practice companion, and a digital friend.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **🗣️ Voice Interaction**: Talk to LOLA naturally using the Push-to-Talk interface. She listens and responds with a friendly voice.
+- **👁️ Vision Capabilities**: LOLA can "see" the world through the camera. Just ask her to "take a look," and she will describe what she sees.
+- **😊 Expressive Avatar**: An anime-style digital face that reacts to conversation states (Listening, Thinking, Speaking) with animations.
+- **🛡️ Safety First**: Built-in safety layers to filter unsafe topics and a "Safe Mode" toggle.
+- **📱 PWA Kiosk Mode**: Designed to run as a full-screen app on Android devices, turning an old phone into a dedicated AI device.
+- **🧠 Mock Brain (MVP)**: Currently running on a simulated intelligence for testing. Ready to be connected to Gemini/OpenAI APIs.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Gallery
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+|                 Isometric View                 |               App Icon               |
+| :--------------------------------------------: | :----------------------------------: |
+| ![Isometric](public/assets/lola-isometric.png) | ![Icon](public/assets/lola-icon.png) |
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18+ installed.
+- An Android phone (optional, for the full device experience).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/prashant13-bh/LOLA.AI.git
+    cd LOLA.AI
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**:
+    Visit `http://localhost:3000` to see LOLA in action.
+
+### Turning your Phone into the Device
+
+1.  Connect your phone to the same Wi-Fi network as your computer.
+2.  Find your computer's Local IP Address (e.g., `192.168.1.X`).
+3.  On your phone, open Chrome and visit `http://YOUR_LOCAL_IP:3000`.
+4.  Tap the **Three Dots Menu** -> **Add to Home Screen**.
+5.  Launch the app from your home screen to enter **Kiosk Mode**.
+
+## ⚙️ Configuration
+
+- **Safe Mode**: Toggle in the Settings menu (Gear icon) to enable/disable content filtering.
+- **Clear Memory**: Use the Settings menu to wipe the local conversation history.
+- **Real AI**: To connect a real LLM, edit `src/lib/llm.ts` and replace the mock logic with your API call.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: TailwindCSS
+- **Language**: TypeScript
+- **APIs**: Web Speech API (STT/TTS), MediaDevices (Camera), Wake Lock API.
+
+## 📝 License
+
+This project is licensed under the MIT License.
