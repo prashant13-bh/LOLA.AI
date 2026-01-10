@@ -1,6 +1,6 @@
 # LOLA - AI Companion Device
 
-![LOLA Front View](public/assets/lola-front.png)
+![LOLA Official Design](public/assets/lola-main.jpg)
 
 **LOLA (Learning-Oriented Life Assistant)** is a friendly, always-on AI companion designed to be a presence in your daily life. Unlike traditional assistants that wait for commands, LOLA is designed to be a conversational partner, a practice companion, and a digital friend.
 
@@ -13,11 +13,11 @@
 - **📱 PWA Kiosk Mode**: Designed to run as a full-screen app on Android devices, turning an old phone into a dedicated AI device.
 - **🧠 Mock Brain (MVP)**: Currently running on a simulated intelligence for testing. Ready to be connected to Gemini/OpenAI APIs.
 
-## 📸 Gallery
+## 📸 Hardware Design Gallery
 
-|                 Isometric View                 |               App Icon               |
-| :--------------------------------------------: | :----------------------------------: |
-| ![Isometric](public/assets/lola-isometric.png) | ![Icon](public/assets/lola-icon.png) |
+|               Front View               |                 Isometric View                 |                Exploded View                 |
+| :------------------------------------: | :--------------------------------------------: | :------------------------------------------: |
+| ![Front](public/assets/lola-front.png) | ![Isometric](public/assets/lola-isometric.png) | ![Exploded](public/assets/lola-exploded.png) |
 
 ## 🚀 Getting Started
 
